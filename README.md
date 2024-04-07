@@ -2,15 +2,14 @@
 
 ### How to run this application
 
-`git clone https://github.com/Ethical-Spectacle/04-2024-Hackathon-algorithmic-avengers.git`
+> `git clone https://github.com/Ethical-Spectacle/04-2024-Hackathon-algorithmic-avengers.git`
 
-`npm install` or `yarn add`
+> `npm install` or `yarn add`
 
-On one terminal: 
+> On one terminal: 
 `npm start`
 
-On another terminal: 
+> On another terminal: 
+> > Linux or MacOS: `npm run dev`
 
-Linux or MacOS: `npm run dev`
-
-Windows: `npm run dev:windows`
+> > Windows: `npm run dev:windows`
