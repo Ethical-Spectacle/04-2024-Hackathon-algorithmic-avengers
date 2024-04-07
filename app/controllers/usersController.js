@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const User = require('../models/user'); // Import the User model
 
 exports.register = async (req, res) => {
-  const { username, email, password, role } = req.body;
+  const { username, email, password, role, location, energy } = req.body;
 
   // Validate input
   if (!username || !email || !password) {
@@ -21,9 +21,9 @@ exports.register = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     // Create user
-    const newUser = await User.create({ username, email, password: hashedPassword, role });
+    const newUser = await User.create({ username, email, password: hashedPassword, role, location, energy });
 
-    res.status(201).json(newUser);
+    res.status(201).json("Message: User created!");
   } catch (error) {
     res.status(500).json({ error: 'Internal server error' });
   }

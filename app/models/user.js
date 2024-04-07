@@ -20,6 +20,14 @@ const userSchema = new mongoose.Schema({
   role: {
     type: String,
     required: true
+  },
+  location: {
+    type: String,
+    required: true
+  },
+  energy: {
+    type: String,
+    required: true
   }
 });
 

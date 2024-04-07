@@ -7,4 +7,7 @@ router.get('/', dataCenterController.getAllDataCenters);
 router.get('/:id', dataCenterController.getDataCenterById);
 router.post('/', dataCenterController.createDataCenter);
 router.put('/:id', dataCenterController.updateDataCenter);
+
+// Other routes...
+
 module.exports = router;

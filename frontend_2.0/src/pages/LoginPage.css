@@ -1,0 +1,78 @@
+/* LoginPage.css */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://t4.ftcdn.net/jpg/00/87/90/95/240_F_87909563_QVfeThgYiNlWg3HIGPGBilIEW67mtBf9.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container select {
+  padding: 10px; /* Adjusted padding */
+  margin-bottom: 20px; /* Adjusted margin */
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card label {
+  color: #333;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.card input[type="text"]:focus,
+.card input[type="email"]:focus,
+.card input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 4px 1px #4CAF50;
+}
+.label:focus,
+
+.card input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 4px 1px #4CAF50;
+}
+
+.card select:focus,
+.card button[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button[type="submit"]:hover {
+  background-color: #666;
+}

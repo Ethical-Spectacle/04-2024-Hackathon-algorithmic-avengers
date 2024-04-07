@@ -1,16 +1,13 @@
+// Location.js
 const mongoose = require('mongoose');
 
-// Locations schema
 const locationSchema = new mongoose.Schema({
-  address: { type: String },
-  city: { type: String },
-  state: { type: String },
-  postal_code: { type: String },
-  latitude: { type: Number },
-  longitude: { type: Number }
+    name: {
+        type: String,
+        required: true
+    },
+    // Add other location properties as needed
 });
 
-
 const Location = mongoose.model('Location', locationSchema);
-
 module.exports = Location;
