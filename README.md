@@ -6,7 +6,10 @@
 
 `npm install` or `yarn add`
 
+On one terminal: 
 `npm start`
+
+On another terminal: 
 
 Linux or MacOS: `npm run dev`
 
