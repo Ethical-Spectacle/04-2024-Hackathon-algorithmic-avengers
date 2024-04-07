@@ -1,7 +1,8 @@
+const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 6969;
 
 // Import user model and routes
 const User = require('./app/models/user');
@@ -15,12 +16,15 @@ mongoose.connect(uri, {
 })
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('Error connecting to MongoDB:', err));
-
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 app.use(express.json());
 
 // Routes
-app.use('/user', usersRoutes);
+app.use('/users', usersRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
