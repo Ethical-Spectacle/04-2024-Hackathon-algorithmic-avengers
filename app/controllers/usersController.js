@@ -25,6 +25,6 @@ exports.register = async (req, res) => {
 
     res.status(201).json("Message: User created!");
   } catch (error) {
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error.response.data: 'Internal server error' });
   }
 };

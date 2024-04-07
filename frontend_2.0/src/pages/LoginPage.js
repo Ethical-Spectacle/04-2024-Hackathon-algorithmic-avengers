@@ -25,7 +25,7 @@ const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:6969/user/register', { username,  email, password, role, location, energy });
+            const response = await axios.post('http://localhost:7879/user/register', { username,  email, password, role, location, energy });
             console.log('Login successful:', response.data);
             // Redirect or handle login success as needed
         } catch (error) {
