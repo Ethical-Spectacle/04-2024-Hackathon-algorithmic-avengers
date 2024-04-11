@@ -17,10 +17,12 @@ notice, you need client and server runs concurrently in different terminal sessi
 
 ### How to run
 ```terminal
-$ git clone           // go to client folder
+$ git clone https://github.com/Ethical-Spectacle/04-2024-Hackathon-algorithmic-avengers.git
+$ cd 04-2024-Hackathon-algorithmic-avengers
 $ yarn # or npm i    // npm install packages
-$ npm run dev        // run it locally
+$ npm run dev        // start server
 
 // next terminal window
-$ npm start
+$ cd frontend
+$ npm start // start client
 ```
