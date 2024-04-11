@@ -95,3 +95,11 @@
   width: 100%; /* w-full */
   margin-bottom: 1rem;
 }
+
+.select-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+}

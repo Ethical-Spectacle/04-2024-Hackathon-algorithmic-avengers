@@ -63,7 +63,7 @@ const LoginPage = () => {
                     
                     <div>
                         <label>Role:</label>
-                        <select value={role} onChange={(e) => setRole(e.target.value)} className="border border-gray-300 rounded px-3 py-1 w-full">
+                        <select value={role} onChange={(e) => setRole(e.target.value)} className="select-box">
                         <option value="Consumer">Consumer</option>
                         <option value="Vendor">Vendor</option>
                     </select>
