@@ -76,7 +76,7 @@ const LoginPage = () => {
                         <label>Energy Capacity/Requirement:</label>
                         <input type="text" value={energy} onChange={(e) => setEnergy(e.target.value)} />
                     </div>
-                    <button type="submit">Login</button>
+                    <button type="submit">SignUp</button>
                 </form>
             </div>
         </div>

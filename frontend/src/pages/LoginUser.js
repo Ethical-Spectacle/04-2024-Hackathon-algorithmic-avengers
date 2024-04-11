@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const LoginUser = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [role, setRole] = useState('');
+    const [role, setRole] = useState('Customer');
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -40,6 +40,13 @@ const LoginUser = () => {
                     <div>
                         <label>Password:</label>
                         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                    </div>
+                    <div>
+                        <label>Role:</label>
+                        <select value={role} onChange={(e) => setRole(e.target.value)} className="select-box">
+                        <option value="Consumer">Consumer</option>
+                        <option value="Vendor">Vendor</option>
+                    </select>
                     </div>
                     <button type="submit">Login</button>
                 </form>
