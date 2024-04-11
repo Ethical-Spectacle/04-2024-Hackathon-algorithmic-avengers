@@ -13,21 +13,21 @@ const MainComponent = () => {
     const sampleData = [
       {
         name: 'Sample Name 1',
-        distance: '100 km',
+        distance: '10 mile',
         matchingScore: '90%',
         temperature: '25°C',
         heatNeeded: '5000 BTU'
       },
       {
         name: 'Sample Name 2',
-        distance: '150 km',
+        distance: '20 mile',
         matchingScore: '80%',
         temperature: '20°C',
         heatNeeded: '6000 BTU'
       },
       {
         name: 'Sample Name 3',
-        distance: '200 km',
+        distance: '37 mile',
         matchingScore: '70%',
         temperature: '30°C',
         heatNeeded: '7000 BTU'

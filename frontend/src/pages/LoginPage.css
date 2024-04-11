@@ -11,13 +11,19 @@
 }
 
 .form-container select {
-  padding: 10px; /* Adjusted padding */
-  margin-bottom: 20px; /* Adjusted margin */
+  padding: 12px; /* Increased padding */
   font-size: 1.2rem;
   border-radius: 4px;
   border: 1px solid #ccc;
   box-sizing: border-box;
   width: 100%;
+  transition: all 0.3s ease; /* Added transition for smooth animation */
+}
+
+.form-container select:focus {
+  padding: 10px; /* Adjusted padding when focused */
+  outline: none;
+  box-shadow: 0 0 4px 1px #4CAF50;
 }
 
 .card {
@@ -53,12 +59,6 @@
   outline: none;
   box-shadow: 0 0 4px 1px #4CAF50;
 }
-.label:focus,
-
-.card input[type="password"]:focus {
-  outline: none;
-  box-shadow: 0 0 4px 1px #4CAF50;
-}
 
 .card select:focus,
 .card button[type="submit"] {
@@ -75,4 +75,23 @@
 
 .card button[type="submit"]:hover {
   background-color: #666;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.select-dropdown {
+  border: 1px solid #e5e7eb; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded */
+  padding: 0.5rem; /* px-3, py-1 */
+  width: 100%; /* w-full */
+  margin-bottom: 1rem;
 }

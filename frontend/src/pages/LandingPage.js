@@ -6,8 +6,10 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="button-container">
-        <button className="button">Login</button>
-        <Link to="/login"> {/* Use Link component to navigate to the login page */}
+        <Link to="/login">
+            <button className="button">Login</button>
+        </Link>
+        <Link to="/signup"> {/* Use Link component to navigate to the login page */}
           <button className="button">SignUp</button>
         </Link>
       </div>

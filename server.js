@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const cors = require('cors');
-const PORT = process.env.PORT || 7879;
+const PORT = process.env.PORT || 6969;
 
 // Import user model and routes
 const User = require('./app/models/user');
