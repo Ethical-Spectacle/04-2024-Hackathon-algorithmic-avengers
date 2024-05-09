@@ -22,6 +22,11 @@ mongoose.connect(uri)
   .catch((error) => {
     console.log(error)
   })
+  
+app.use((req, res, next) => {
+  console.log(req.path, req.method)
+  next()
+})
 
 app.use(express.json());
 app.use(cors());
@@ -30,7 +35,10 @@ app.use('/api/user', usersRoutes);
 
 // app.use('/data_centers', dataCenterRoutes);
 // app.use('/v_dashboard', v_dashboardRoutes);
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(PORT, '127.0.0.1', () => {
+  console.log(`Server is running on http://127.0.0.1:${PORT}`);
 });
+
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
