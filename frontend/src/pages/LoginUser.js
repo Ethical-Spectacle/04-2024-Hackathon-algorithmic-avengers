@@ -13,7 +13,7 @@ const LoginUser = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:6969/user/login', { username, password, role });
+            const response = await axios.post('http://localhost:6968/api/user/login', { username, password, role });
             console.log('Login successful:', response.data);
             // Redirect or handle login success as needed
             if(role === 'Vendor')

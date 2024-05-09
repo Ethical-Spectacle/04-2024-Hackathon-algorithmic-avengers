@@ -25,11 +25,11 @@ const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:6969/user/register', { username,  email, password, role, location, energy });
+            const response = await axios.post('http://localhost:6968/api/user/login', { username,  email, password, role, location, energy });
             console.log('Login successful:', response.data);
             // Redirect or handle login success as needed
         } catch (error) {
-            console.error('Registration failed:', error.response?.data || error.message);
+            console.error('Login failed:', error.response?.data || error.message);
             // Handle login failure
         }
         if(role === 'Consumer') {
