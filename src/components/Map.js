@@ -34,7 +34,7 @@ const Marker = ({ name }) => (
 const Map = ({ center, zoom }) => (
   <div style={{ height: '50vh', width: '100%', position: 'relative' }}>
     <GoogleMapReact
-      bootstrapURLKeys={{ key: 'AIzaSyBFr4yGf4_DyRNQm9G9tnFgcf2enp-4j9o' }}
+      bootstrapURLKeys={{ key: '' }}
       defaultCenter={center}
       defaultZoom={zoom}
     >
