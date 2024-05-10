@@ -1,6 +1,13 @@
 /* LandingPage.css */
-
-.landing-page {
+body {
+  background-image: url('/Users/aastharastogi/Projects/04-2024-Hackathon-algorithmic-avengers/frontend/src/landing.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+/* .landing-page {
     background-image: url('/Users/aastharastogi/Projects/04-2024-Hackathon-algorithmic-avengers/frontend/src/landing.png');
     background-size: cover;
     background-position: center;
@@ -10,7 +17,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-  }
+  } */
   
   .button-container {
     position: absolute;
