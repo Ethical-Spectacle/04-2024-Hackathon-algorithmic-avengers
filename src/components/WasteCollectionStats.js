@@ -4,6 +4,7 @@ import Map from './Map';
 import AlertTable from './AlertTable';
 import SimpleLineChart from './SimpleLineChart'
 import PieChart  from './PieChart';
+import MyMapComponent from './MapT';
 
 const barchartData = [
     { name: 'District Heating', value: 400 },
@@ -51,7 +52,8 @@ const DashboardLayout = ({data, rightPanelData}) => {
 
                 {/* Map and associated components */}
                 <div className="col-span-9 row-span-3 bg-gray-800 p-2 rounded-lg shadow-lg">
-                    <Map center={center} zoom={zoom} />
+                    {/* <Map center={center} zoom={zoom} /> */}
+                    <MyMapComponent/>
                 </div>
 
                 {/* Right panels */}    
