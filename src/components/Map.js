@@ -29,7 +29,7 @@ const Marker = ({ name }) => (
     { id: 9, name: "CoreSite CH1 Data Center", lat: 41.8770, lng: -87.6317 },
     { id: 10, name: "Ascent CH2 Data Center", lat: 41.8781, lng: -87.6298 }
   ];
-  
+
 
 const Map = ({ center, zoom }) => (
   <div style={{ height: '50vh', width: '100%', position: 'relative' }}>
@@ -37,6 +37,7 @@ const Map = ({ center, zoom }) => (
       bootstrapURLKeys={{ key: '' }}
       defaultCenter={center}
       defaultZoom={zoom}
+      
     >
       {dataCenters.map(dataCenter => (
         <Marker

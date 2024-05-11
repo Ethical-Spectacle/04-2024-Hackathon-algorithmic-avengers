@@ -16,7 +16,7 @@ const Header = () => {
         <div className="bg-custom-blue text-white font-sans p-3 flex flex-col items-start">
             <div className="w-full flex flex-col">
                 <div className="flex justify-between items-center">
-                    <h2 className="text-xl font-normal m-2">Data Center Heat Recovery Utilization Dashboard</h2>
+                    <h2 className="text-xl font-normal m-2">Data Center Heat Utilization Dashboard</h2>
                     <p className="text-blue-200 text-sm m-1">Last updated: {currentTime}</p>
                 </div>
                 <hr className="border-gray-400 h-1 bg-gray-400 w-full my-1" />
@@ -24,22 +24,22 @@ const Header = () => {
             <nav className="w-full">
                 <ul className="flex items-center p-0 m-0">
                     <li className="mr-5">
-                        <button className="bg-transparent border-none text-blue-200 text-l cursor-pointer p-2 border-b-4 border-transparent hover:border-gray-400 focus:border-gray-400">
+                        <button className="bg-transparent border-none text-blue-200 text-sm cursor-pointer p-2 border-b-4 border-transparent hover:border-gray-400 focus:border-gray-400">
                             Real-Time Monitoring
                         </button>
                     </li>
                     <li className="mr-5">
-                        <button className="bg-transparent border-none text-blue-200 text-l cursor-pointer p-2 border-b-4 border-transparent hover:border-gray-400 focus:border-gray-400">
+                        <button className="bg-transparent border-none text-blue-200 text-sm cursor-pointer p-2 border-b-4 border-transparent hover:border-gray-400 focus:border-gray-400">
                             Historical Data
                         </button>
                     </li>
                     <li className="mr-5">
-                        <button className="bg-transparent border-none text-blue-200 text-l cursor-pointer p-2 border-b-4 border-transparent hover:border-gray-400 focus:border-gray-400">
+                        <button className="bg-transparent border-none text-blue-200 text-sm cursor-pointer p-2 border-b-4 border-transparent hover:border-gray-400 focus:border-gray-400">
                             Predictive Insights
                         </button>
                     </li>
                     <li className="mr-5">
-                        <button className="bg-transparent border-none text-blue-200 text-l cursor-pointer p-2 border-b-4 border-transparent hover:border-gray-400 focus:border-gray-400">
+                        <button className="bg-transparent border-none text-blue-200 text-sm cursor-pointer p-2 border-b-4 border-transparent hover:border-gray-400 focus:border-gray-400">
                             Settings
                         </button>
                     </li>

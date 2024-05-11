@@ -6,12 +6,6 @@ import SimpleLineChart from './SimpleLineChart'
 import PieChart  from './PieChart';
 import MyMapComponent from './MapT';
 
-const barchartData = [
-    { name: 'District Heating', value: 400 },
-    { name: 'Greenhouses', value: 300 },
-    { name: 'Industrial Processes', value: 200 },
-    { name: 'Local Power Generation', value: 100 }
-];
 
 const sampleData = [
     { name: '1', value: 400 },
@@ -69,7 +63,6 @@ const DashboardLayout = ({data, rightPanelData}) => {
 
                 {/* Bottom panels */}
                 <div className="col-span-6 bg-gray-800 p-4 rounded-lg shadow-lg">
-                    <h2>System Alerts</h2>
                     <AlertTable/>
                 </div>
                 <div className="col-span-3 bg-gray-800 p-4 rounded-lg shadow-lg">

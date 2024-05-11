@@ -6,8 +6,8 @@ const panelData = [
     // Top row data
     { title: "Total Waste Heat Generated", value: "617.0", description: "In KJ", color: "text-blue-200" },
     { title: "Heat Reuse Efficiency", value: "70%", description: " ", color: "text-orange-400" },
-    { title: "Average Fill Level", value: "50%", description: " ", color: "text-orange-400" },
-    { title: "Routes Overview", value: "43%", description: " ", color: "text-blue-200" }
+    { title: "Projected 2024 Savings", value: "$220,000", description: " ", color: "text-green-400" },
+    { title: "ROI of Heat Reuse System", value: "20%", description: " ", color: "text-blue-200" }
     // More data...
   ];
   
